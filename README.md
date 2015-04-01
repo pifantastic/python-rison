@@ -5,9 +5,16 @@ Python version of the rison encoder/decoder originally taken from http://mjtempl
 ## Usage
 
 ```python
-
 import rison
 
 print rison.dumps({'foo': 'bar'})  # '(foo:bar)'
 
 print rison.loads('(foo:bar)')  # {'foo': 'bar'}
+```
+
+## Tests
+
+```
+pip install nose
+nosetests tests/*.py
+```
